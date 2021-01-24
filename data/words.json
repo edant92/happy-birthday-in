@@ -10,5 +10,11 @@
     "language": "english",
     "informal": "Happy Birthday!",
     "formal": "Happy Birthday!"
+  },
+  {
+    "id": "pt",
+    "language": "portuguese",
+    "informal": "Parabéns!",
+    "formal": "Feliz Aniversário"
   }
 ]

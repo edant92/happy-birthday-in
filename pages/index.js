@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
+import languages from "data/words.json";
 
 export default function Home() {
   return (
@@ -55,7 +56,33 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <div className="grid grid-cols-6 gap-4">
+          {languages.map((language) => {
+            return (
+              <div key={language.id} className="rounded-lg shadow-lg">
+                <a href={`/phrases/${language.language}`}>
+                  <img
+                    className="block h-auto w-full"
+                    src={`/flags/${language.id}.svg`}
+                    alt={`Flag of ${language.language}`}
+                  />
+                </a>
+                <header className="flex items-center justify-between leading-tight p-2 md:p-4">
+                  <h1 className="text-lg">
+                    <a
+                      className="no-underline hover:underline text-black"
+                      href={`/phrases/${language.language}`}
+                    >
+                      {language.language}
+                    </a>
+                  </h1>
+                </header>
+              </div>
+            );
+          })}
+        </div>
       </main>
+
       <Footer />
     </>
   );

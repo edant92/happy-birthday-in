@@ -1,5 +1,5 @@
 import { getAllPhraseLanguages, getWordData } from "lib/phrases";
-import Phrase from "pages/phrases/Phrase";
+import Phrase from "@components/Phrase";
 
 export default function Post({ postData }) {
   return <Phrase data={postData} />;
