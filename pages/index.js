@@ -1,6 +1,5 @@
 import Head from "next/head";
-import languages from "data/words.json";
-import { capitalize } from "utils/utils";
+import languages from "data/languages.json";
 
 export default function Home() {
   return (
@@ -27,7 +26,7 @@ export default function Home() {
                 <div key={language.id} className="rounded-lg shadow-lg">
                   <a href={`/${language.language}`}>
                     <img
-                      className="block h-auto w-full"
+                      className="h-24 w-24"
                       src={`/flags/${language.id}.svg`}
                       alt={`Flag of ${language.language}`}
                     />
@@ -38,7 +37,7 @@ export default function Home() {
                         className="no-underline hover:underline text-black"
                         href={`/${language.language}`}
                       >
-                        {capitalize(language.language)}
+                        {language.title}
                       </a>
                     </h1>
                   </header>

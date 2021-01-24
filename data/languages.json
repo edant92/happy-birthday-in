@@ -1,0 +1,54 @@
+[
+  {
+    "id": "en",
+    "language": "english",
+    "title": "English",
+    "variations": [
+      {
+        "type": "informal",
+        "text": "Happy Birthday!"
+      }
+    ]
+  },
+  {
+    "id": "de",
+    "language": "german",
+    "title": "German",
+    "variations": [
+      {
+        "type": "informal",
+        "text": "Alles Gute zum Geburtstag!"
+      },
+      {
+        "type": "formal",
+        "text": "Wir wünschen Ihnen einen wunderschönen Tag!"
+      }
+    ]
+  },
+  {
+    "id": "pt",
+    "language": "portuguese",
+    "title": "Portuguese",
+    "variations": [
+      {
+        "type": "informal",
+        "text": "Parabéns!"
+      },
+      {
+        "type": "formal",
+        "text": "Feliz Aniversário"
+      }
+    ]
+  },
+  {
+    "id": "cr",
+    "language": "cornish",
+    "title": "Cornish",
+    "variations": [
+      {
+        "type": "informal",
+        "text": "Penn-bloodh Lowen!"
+      }
+    ]
+  }
+]

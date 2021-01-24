@@ -1,4 +1,10 @@
-export const capitalize = (str, lower = false) =>
-  (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, (match) =>
-    match.toUpperCase()
+export const copyPhraseToClipboard = (phrase) => {
+  navigator.clipboard.writeText(phrase).then(
+    function () {
+      console.log(`Copied ${phrase} to clipboard`);
+    },
+    function () {
+      console.error(`Failed to copy ${phrase} to clipboard`);
+    }
   );
+};
