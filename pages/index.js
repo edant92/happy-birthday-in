@@ -1,12 +1,7 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
-import WORDS from "data/words.json";
-
-const PLACEHOLDER_COUNTRY_CODE = "de";
 
 export default function Home() {
-  console.log('ok', Object.values(WORDS));
-
   return (
     <>
       <Head>
@@ -19,20 +14,8 @@ export default function Home() {
           <div className="container px-8 mx-auto py-36 lg:px-4">
             <div className="flex flex-col w-full mx-auto mb-12 text-left lg:w-2/3 lg:text-center">
               <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-blue-800 sm:text-5xl title-font">
-                {WORDS["de"]["formal"]}
+                Happy Birthday In...
               </h1>
-            </div>
-            <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-12 w-12"
-                  src={`/flags/${PLACEHOLDER_COUNTRY_CODE}.svg`}
-                  alt={`Flag of ${WORDS["de"]["language"]}`}
-                />
-              </div>
-              <div>
-                <div className="text-xl font-medium text-black">{WORDS.de.language}</div>
-              </div>
             </div>
             <p className="w-full mt-12 mb-8 text-sm text-center text-gray-500">
               <a

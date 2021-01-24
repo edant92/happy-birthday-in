@@ -7,7 +7,6 @@ export default function Post({ postData }) {
 
 export async function getStaticPaths() {
   const paths = getAllPhraseLanguages();
-  console.log("getStaticPaths", paths);
   return {
     paths,
     fallback: false,
@@ -15,7 +14,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("getStaticProps", params);
   const postData = getWordData(params.language);
   return {
     props: {

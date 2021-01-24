@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {capitalize} from "utils/utils";
+import { capitalize } from "utils/utils";
 
 export default function Phrase({ data }) {
   return (
