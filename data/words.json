@@ -1,0 +1,14 @@
+[
+  {
+    "id": "de",
+    "language": "german",
+    "informal": "Alles Gute zum Geburtstag!",
+    "formal": "Wir wünschen Ihnen einen wunderschönen Tag!"
+  },
+  {
+    "id": "en",
+    "language": "english",
+    "informal": "Happy Birthday!",
+    "formal": "Happy Birthday!"
+  }
+]
