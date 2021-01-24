@@ -5,6 +5,7 @@ export default function Post({ postData }) {
   return <Phrase data={postData} />;
 }
 
+// noinspection JSUnusedGlobalSymbols
 export async function getStaticPaths() {
   const paths = getAllPhraseLanguages();
   return {
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
   };
 }
 
+// noinspection JSUnusedGlobalSymbols
 export async function getStaticProps({ params }) {
   const postData = getWordData(params.language);
   return {
